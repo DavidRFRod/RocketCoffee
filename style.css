@@ -1,0 +1,104 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: 'Manrope', sans-serif;
+    background: var(--backgrond);
+    color: var(--text-color);
+    background-repeat: no-repeat;
+  }
+
+header {
+      display: flex;
+      align-items: center;
+      margin: 4rem;
+      justify-content: center;
+    }
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0.8rem
+}
+
+nav:first-child{
+    gap: 8rem;
+}
+    
+ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+a {
+    color: var(--text-color);
+    text-decoration:  none;
+}
+a:hover {
+    color: var(--button);
+    text-decoration:  none;
+}
+button{
+    border: 1px solid var(--button);
+    background: var(--backgrond);
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: 1rem 5rem;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+button:hover{
+    border: 1px solid var(--button);
+    background: var(--border);
+    color: var(--button);
+    border-radius: 6px;
+    padding: 1rem 5rem;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+main {
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    font-size: 9rem;
+    color: var(--text-color)  
+
+}
+h2 {
+    font-size: 9rem;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: var(--backgrond)    
+
+}
+.blur-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.blur-left {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.coffe {
+    position: absolute;
+    bottom: 10%;
+    
+}
