@@ -13,10 +13,18 @@
     <title>RocketCoffe</title>
 </head>
 <body>
-    <header class="container">
-        <nav>
-            <a href="index.html" class="logo"><img src="assets/logo-desktop.svg" alt="Logo RocketCoffe"></a>
-            <ul>
+    <header class="container-header">
+        <a href="index.html" class="logo"><img src="assets/logo-desktop.svg" alt="Logo RocketCoffe"></a>
+        <nav id="nav">
+            <div class="header-mobile">
+                    <a href="">
+                        <img src="assets/logo-mobile.svg" id="mobile-logo" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/menu-buguer-open.svg"  id="open-buguer" alt="">
+                    </a>
+            </div>
+            <ul class="menu">
                 <li>
                     <a href="">Home</a> 
                 </li>
@@ -33,21 +41,34 @@
                     <a href="">Lojas</a> 
                 </li>
             </ul>
-            <button type="button"> <a href="">PEGAR MEU CAFÉ</a></button>
+            <button id="button-header" type="button"> <a href="" id="back">PEGAR MEU CAFÉ</a></button>
         </nav>
     </header>
     <main class="container">
+        <div class="content-mobile">
+            <p class="text">
+                O café que fará seu <br> código decolar para <br>
+                o próximo nível.
+            </p>
+        </div>
+        <div>
+            <button type="button" id="button-content-mobile"> <a href="" id="got-coffee">PEGAR MEU CAFÉ </a><span><img src="assets/arrow.svg" alt=""></span></button>
+        </div>
+
         <img class="blur-right" src="assets/blur-2.png" alt="">
-        <h1>
-            Great Coffee
-        </h1>
-        <h2>
-            &lt;Great Code/&gt;
-        </h2>
-        
+        <div class="content-desktop">
+            <h1>
+                Great Coffee
+            </h1>
+            <h2>
+                &lt;Great Code/&gt;
+            </h2>
+        </div>
         <img src="assets/rocket-coffee.png" class="coffee" alt="">
+        <img src="assets/blur-mobile.png" class="blur-mobile" alt="">
         
         <img class="blur-left" src="assets/blur-1.png" alt="">
     </main>
+    <script src="js.js"></script>
 </body>
 </html>
